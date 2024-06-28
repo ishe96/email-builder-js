@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { Box, Button, Divider, Drawer, Link, Stack, Typography } from '@mui/material';
+import { Button, Divider, Drawer, Stack, Typography } from '@mui/material';
 
 import { useSamplesDrawerOpen } from '../../documents/editor/EditorContext';
 
 import SidebarButton from './SidebarButton';
-import logo from './waypoint.svg';
+// import logo from './waypoint.svgs';
 
 export const SAMPLES_DRAWER_WIDTH = 240;
 
@@ -24,7 +24,7 @@ export default function SamplesDrawer() {
       <Stack spacing={3} py={1} px={2} width={SAMPLES_DRAWER_WIDTH} justifyContent="space-between" height="100%">
         <Stack spacing={2} sx={{ '& .MuiButtonBase-root': { width: '100%', justifyContent: 'flex-start' } }}>
           <Typography variant="h6" component="h1" sx={{ p: 0.75 }}>
-            EmailBuilder.js
+            Custom EmailBuilder
           </Typography>
 
           <Stack alignItems="flex-start">
@@ -37,6 +37,7 @@ export default function SamplesDrawer() {
             <SidebarButton href="#sample/reservation-reminder">Reservation reminder</SidebarButton>
             <SidebarButton href="#sample/post-metrics-report">Post metrics</SidebarButton>
             <SidebarButton href="#sample/respond-to-message">Respond to inquiry</SidebarButton>
+            <SidebarButton href="#sample/new-product-item">New Product</SidebarButton>
           </Stack>
 
           <Divider />
@@ -45,12 +46,12 @@ export default function SamplesDrawer() {
             <Button size="small" href="https://www.usewaypoint.com/open-source/emailbuilderjs" target="_blank">
               Learn more
             </Button>
-            <Button size="small" href="https://github.com/usewaypoint/email-builder-js" target="_blank">
+            <Button size="small" href="https://github.com/ishe96/email-builder-js" target="_blank">
               View on GitHub
             </Button>
           </Stack>
         </Stack>
-        <Stack spacing={2} px={0.75} py={3}>
+        {/* <Stack spacing={2} px={0.75} py={3}>
           <Link href="https://usewaypoint.com?utm_source=emailbuilderjs" target="_blank" sx={{ lineHeight: 1 }}>
             <Box component="img" src={logo} width={32} />
           </Link>
@@ -72,7 +73,7 @@ export default function SamplesDrawer() {
           >
             Learn more
           </Button>
-        </Stack>
+        </Stack> */}
       </Stack>
     </Drawer>
   );

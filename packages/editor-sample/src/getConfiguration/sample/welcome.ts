@@ -52,7 +52,7 @@ const WELCOME: TEditorConfiguration = {
         },
       },
       props: {
-        text: 'Hi Anna 👋,',
+        text: 'Hi Ishe 👋,',
       },
     },
   },
